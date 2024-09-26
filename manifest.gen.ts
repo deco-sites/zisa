@@ -5,7 +5,7 @@
 import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/site.ts";
-import * as $$$0 from "./loaders/ZisaLoader.ts";
+import * as $$$0 from "./loaders/DogFacts.ts";
 import * as $$$$$$0 from "./sections/BlogPosts.tsx";
 import * as $$$$$$1 from "./sections/Faq.tsx";
 import * as $$$$$$2 from "./sections/Footer.tsx";
@@ -21,7 +21,7 @@ import * as $$$$$$8 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
-    "site/loaders/ZisaLoader.ts": $$$0,
+    "site/loaders/DogFacts.ts": $$$0,
   },
   "sections": {
     "site/sections/BlogPosts.tsx": $$$$$$0,
