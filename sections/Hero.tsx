@@ -1,3 +1,4 @@
+import type { ZisaLoader } from "../loaders/ZisaLoader.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
@@ -21,6 +22,7 @@ export interface Props {
   image?: ImageWidget;
   placement?: "left" | "right";
   cta?: CTA[];
+  loader?: ZisaLoader;
 }
 
 const PLACEMENT = {
@@ -38,6 +40,7 @@ export default function HeroFlats({
     { id: "change-me-1", href: "/", text: "Change me", outline: false },
     { id: "change-me-2", href: "/", text: "Change me", outline: true },
   ],
+  loader,
 }: Props) {
   return (
     <nav class="lg:container lg:mx-auto mx-4">
@@ -74,6 +77,9 @@ export default function HeroFlats({
               }}
             >
             </div>
+            <ul>
+              {loader?.map((fact) => <li>{fact}</li>)}
+            </ul>
             <p class="text-lg md:text-md leading-[150%]">
               {description}
             </p>
