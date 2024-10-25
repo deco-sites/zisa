@@ -7,9 +7,6 @@
       "dogFacts": {
         "__resolveType": "site/loaders/DogFacts.ts"
       }
-    },
-    {
-      "__resolveType": "site/sections/SimpleTextList.tsx"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

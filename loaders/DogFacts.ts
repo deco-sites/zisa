@@ -18,3 +18,5 @@ async function loader(
 }
 
 export default loader;
+export const cache = "stale-while-revalidate";
+export const cacheKey = (_: Props) => "dog-facts";
